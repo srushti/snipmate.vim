@@ -504,6 +504,7 @@ snippet mrenc
 	rename_column :${1:table_name}, :${2:old_column_name}, :${3:new_column_name}
 snippet mcc
 	change_column :${1:table_name}, :${2:column_name}, :${3:data_type}
+
 #rspec
 snippet it
 	it "${1:spec_name}" do
@@ -523,6 +524,12 @@ snippet bef
 	end
 snippet aft
 	after(:${1:each}) do
+		${2}
+	end
+
+#shoulda
+snippet shda
+	should "${1:do_what}" do
 		${2}
 	end
 
